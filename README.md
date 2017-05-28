@@ -1,4 +1,5 @@
-# The Minimal theme
+# Shoreline Docs
+## Based on [The Minimal theme]((http://pages-themes.github.io/minimal))
 
 [![Build Status](https://travis-ci.org/pages-themes/minimal.svg?branch=master)](https://travis-ci.org/pages-themes/minimal) [![Gem Version](https://badge.fury.io/rb/jekyll-theme-minimal.svg)](https://badge.fury.io/rb/jekyll-theme-minimal)
 
@@ -10,16 +11,28 @@
 
 To use the Minimal theme:
 
-1. Add the following to your site's `_config.yml`:
+1. Install theme gem. Check out this project in another workspace and run `gem build jekyll-theme-shoreline-docs.gemspec`
+
+2. Add the following to your site's `_config.yml`:
 
     ```yml
-    theme: jekyll-theme-minimal
+    theme: jekyll-theme-shoreline-docs
     ```
 
-2. Optionally, if you'd like to preview your site on your computer, add the following to your site's `Gemfile`:
+3. Optionally, if you'd like to preview your site on your computer, add the following to your site's `Gemfile`:
 
     ```ruby
     gem "github-pages", group: :jekyll_plugins
+
+    # If you have any plugins, put them here!
+    group :jekyll_plugins do
+      # gem "jekyll-github-metadata", "~> 1.0"
+      gem 'bootstrap', '~> 4.0.0.alpha6'
+      gem 'autoprefixer-rails'
+      gem 'jekyll-assets'
+      gem 'jekyll-paginate'
+      gem 'jekyll-gist'
+    end    
     ```
 
 
