@@ -4,5 +4,9 @@ show_downloads: true
 google_analytics:
 theme:
 
+sass:
+  sass_dir:         _sass
+  style:            :compressed
+
 markdown: kramdown
-gems: [bootstrap, autoprefixer-rails, jekyll-assets]
+gems: [bootstrap, autoprefixer-rails, jekyll-assets, jekyll-paginate, jekyll-gist]

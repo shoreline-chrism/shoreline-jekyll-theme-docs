@@ -8,4 +8,6 @@ group :jekyll_plugins do
   gem 'bootstrap', '~> 4.0.0.alpha6'
   gem 'autoprefixer-rails'
   gem 'jekyll-assets'
+  gem 'jekyll-paginate'
+  gem 'jekyll-gist'
 end
